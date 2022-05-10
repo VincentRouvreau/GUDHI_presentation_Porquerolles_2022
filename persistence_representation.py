@@ -75,3 +75,5 @@ print(f"Wasserstein distance (hera) is {wdh(D1, D2)}")
 
 bd = BottleneckDistance(epsilon=.001)
 print(f"Bottleneck distance is {bd(D1, D2)}")
+
+# ### [Perslay](https://github.com/MathieuCarriere/tda-tutorials/blob/perslay/Tuto-GUDHI-perslay-visu.ipynb)
