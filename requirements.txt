@@ -1,0 +1,6 @@
+jupytext
+jupyterlab
+gudhi
+matplotlib
+scikit-learn
+ipyvolume
