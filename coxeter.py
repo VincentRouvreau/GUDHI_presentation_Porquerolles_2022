@@ -11,10 +11,10 @@
 # \rho = x² + y² + (z² - t²)² + (2zt)²
 # $$
 # $$
-# f_1 = (z² - t²)\rho + x(8x² -2\rho
+# f_1 = (z² - t²)\rho + x(8x² -2\rho)
 # $$
 # $$
-# f_2 = 2\sqrt{2}xzt + y(8x² -2\rho
+# f_2 = 2\sqrt{2}xzt + y(8x² -2\rho)
 # $$
 #
 # Then the knot in $\mathbb{R}⁴$ is:
@@ -24,7 +24,7 @@
 #
 # A point on the knot (a valid seed) is the point $X_0 = (x, y, z, t) = (0, 0, 1/\sqrt{2}, 1/\sqrt{2})$
 #
-# The sources are available [in this gist](https://gist.github.com/VincentRouvreau/4eda0b1d5b936bcf070cb76b5fba1558).
+# The sources are available [here](coxeter/knot.cpp).
 
 # ### Visualization
 # Requires [medit](https://www.ljll.math.upmc.fr/frey/software.html)
@@ -52,7 +52,7 @@
 # A PL approximation of the entire fibration of dimension 3 can be obtained by running the algorithm in $\mathbb{R}⁶$ using (2).
 # We can again replace the strict equality by a non strict one so that the same seed point $X_0 = (x, y, z, t) = (0, 0, 1/\sqrt{2}, 1/\sqrt{2})$ is still valid.
 #
-# The sources are available [in this gist](https://gist.github.com/VincentRouvreau/9e170ba8121b575b0d95c0dbe8651395).
+# The sources are available  [here](coxeter/seifert_surface.cpp).
 
 # ### Visualization
 #
