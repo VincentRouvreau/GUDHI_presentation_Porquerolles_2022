@@ -1,5 +1,9 @@
 # GUDHI presentation at Porquerolles in 2022
 
+## From a notebook server
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/VincentRouvreau/GUDHI_presentation_Porquerolles_2022/main)
+
 ## Installation
 
 It requires some packages to be installed, either:
