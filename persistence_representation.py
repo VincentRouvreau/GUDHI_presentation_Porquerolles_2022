@@ -77,3 +77,25 @@ bd = BottleneckDistance(epsilon=.001)
 print(f"Bottleneck distance is {bd(D1, D2)}")
 
 # ### [Perslay](https://github.com/MathieuCarriere/tda-tutorials/blob/perslay/Tuto-GUDHI-perslay-visu.ipynb)
+
+# ## Scikit-learn like interfaces - *Work in progress*
+
+from sklearn.svm import SVC
+from sklearn.pipeline import Pipeline
+
+from gudhi.sklearn.rips_persistence import RipsPersistence
+from gudhi.representations import Landscape, DiagramSelector
+
+pipe = Pipeline(
+    [
+        ("rips_pers", RipsPersistence(max_rips_dimension=2, max_persistence_dimension=2, only_this_dim=1, n_jobs=-1)),
+        ("finite_diags", DiagramSelector(use=True, point_type="finite")),
+        ("persim", PersistenceImage(bandwidth=50, weight=lambda x: x[1] ** 2, im_range=[0, 256, 0, 256], resolution=[20, 20])),
+        ("SVC", SVC()),
+    ]
+)
+
+# Learn from the train subset
+tda_ml_pipe.fit(X_train, y_train)
+# Predict from the test subset
+predicted = tda_ml_pipe.predict(X_test)
