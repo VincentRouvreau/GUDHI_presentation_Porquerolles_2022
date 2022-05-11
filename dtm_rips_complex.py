@@ -5,13 +5,6 @@ import ipyvolume as ipv
 # https://gudhi.inria.fr/python/latest/datasets_generators.html#points-on-sphere
 from gudhi.datasets.generators import points
 
-
-def N_sphere(n_samples, ambient_dim, radius, noise):
-    sph = points.sphere(n_samples = n_samples, ambient_dim = ambient_dim, radius = radius, sample = 'random')
-    sph = sph + noise * np.random.rand(sph.shape[0],sph.shape[1])
-    return sph
-
-
 # sph is a 2-sphere
 sph = points.sphere(n_samples = 150, ambient_dim = 3, radius = 1., sample = 'random')
 

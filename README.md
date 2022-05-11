@@ -18,9 +18,6 @@ pip install -r requirements.txt
 
 ## Presentation
 
-* Clustering:
-  * [ToMaTo](clustering.py)
-
 * Manifold reconstruction:
   * [Tangential complex](tangential.py)
   * [Coxeter triangulation](coxeter.py)
@@ -33,3 +30,8 @@ pip install -r requirements.txt
 * Topological descriptors
   * [Representations](persistence_representation.py)
 
+* Clustering:
+  * [ToMaTo](clustering.py)
+
+* Cover complex:
+  * [Mapper](mapper.py)
